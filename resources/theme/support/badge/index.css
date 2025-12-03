@@ -1,0 +1,7 @@
+.fi-badge {
+    @apply rounded-full px-2.5 py-1.5;
+}
+
+.fi-icon-btn-badge-ctn {
+    @apply -ml-1.5 mt-0.5 bg-transparent;
+}

@@ -1,0 +1,41 @@
+html.fi{
+  scrollbar-gutter: unset;
+}
+
+::-webkit-scrollbar {
+  @apply md:size-1.5;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-primary-500 rounded-xl;
+    &:hover {
+      @apply bg-primary-400;
+    }
+  }
+
+.dark {
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-600;
+    &:hover {
+      @apply bg-primary-500;
+    }
+  }
+}
+
+@supports (-moz-appearance: none) {
+    * {
+        scrollbar-color: var(--primary-500) var(--gray-100);
+    }
+
+    .dark, .dark * {
+        scrollbar-color: var(--primary-600) var(--gray-900);
+    }
+}
