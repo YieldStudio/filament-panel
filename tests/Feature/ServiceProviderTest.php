@@ -31,7 +31,7 @@ it('can configure package', function () {
 
 it('package has views enabled', function () {
     $provider = new FilamentPanelServiceProvider(app());
-    $package = new \Spatie\LaravelPackageTools\Package();
+    $package = new \Spatie\LaravelPackageTools\Package;
 
     $provider->configurePackage($package);
 
@@ -40,7 +40,7 @@ it('package has views enabled', function () {
 
 it('package has translations enabled', function () {
     $provider = new FilamentPanelServiceProvider(app());
-    $package = new \Spatie\LaravelPackageTools\Package();
+    $package = new \Spatie\LaravelPackageTools\Package;
 
     $provider->configurePackage($package);
 
@@ -49,7 +49,7 @@ it('package has translations enabled', function () {
 
 it('package has config file enabled', function () {
     $provider = new FilamentPanelServiceProvider(app());
-    $package = new \Spatie\LaravelPackageTools\Package();
+    $package = new \Spatie\LaravelPackageTools\Package;
 
     $provider->configurePackage($package);
 
@@ -59,7 +59,7 @@ it('package has config file enabled', function () {
 
 it('package name is correctly set', function () {
     $provider = new FilamentPanelServiceProvider(app());
-    $package = new \Spatie\LaravelPackageTools\Package();
+    $package = new \Spatie\LaravelPackageTools\Package;
 
     $provider->configurePackage($package);
 

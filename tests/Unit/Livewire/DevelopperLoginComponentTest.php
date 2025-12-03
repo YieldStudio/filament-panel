@@ -11,7 +11,7 @@ it('can mount component with users and model class', function () {
     ];
     $modelClass = 'App\\Models\\User';
 
-    $component = new DevelopperLogin();
+    $component = new DevelopperLogin;
     $component->mount($users, $modelClass);
 
     expect($component->users)->toBe($users);
@@ -19,25 +19,25 @@ it('can mount component with users and model class', function () {
 });
 
 it('can instantiate component', function () {
-    $component = new DevelopperLogin();
+    $component = new DevelopperLogin;
 
     expect($component)->toBeInstanceOf(DevelopperLogin::class);
 });
 
 it('has loginAsDevelopper method', function () {
-    $component = new DevelopperLogin();
+    $component = new DevelopperLogin;
 
     expect(method_exists($component, 'loginAsDevelopper'))->toBeTrue();
 });
 
 it('has users property', function () {
-    $component = new DevelopperLogin();
+    $component = new DevelopperLogin;
 
     expect($component)->toHaveProperty('users');
 });
 
 it('has model class property', function () {
-    $component = new DevelopperLogin();
+    $component = new DevelopperLogin;
 
     expect($component)->toHaveProperty('modelClass');
 });
@@ -52,21 +52,21 @@ it('listens for loginAsDevelopper event', function () {
 });
 
 it('has render method', function () {
-    $component = new DevelopperLogin();
+    $component = new DevelopperLogin;
 
     expect(method_exists($component, 'render'))->toBeTrue();
 });
 
 it('mount sets users property correctly', function () {
     $users = ['user@example.com', 'admin@example.com'];
-    $component = new DevelopperLogin();
+    $component = new DevelopperLogin;
     $component->mount($users, 'App\\Models\\User');
 
     expect($component->users)->toBe($users);
 });
 
 it('mount sets modelClass property correctly', function () {
-    $component = new DevelopperLogin();
+    $component = new DevelopperLogin;
     $component->mount([], 'App\\Models\\User');
 
     expect($component->modelClass)->toBe('App\\Models\\User');
