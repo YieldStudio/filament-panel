@@ -16,7 +16,7 @@ class ThemeImportTest extends TestCase
         $this->assertNotFalse($content, 'Theme CSS file must be readable');
 
         $lines = explode("\n", $content);
-        $firstLine = mb_trim($lines[0]);
+        $firstLine = trim($lines[0]);
 
         $expectedImport = "@import '../../../../filament/filament/resources/css/theme.css';";
 
