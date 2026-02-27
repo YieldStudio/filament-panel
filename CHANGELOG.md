@@ -2,6 +2,20 @@
 
 All notable changes to `filament-panel` will be documented in this file.
 
+## 0.0.2 - 2026-02-27
+
+### What's Changed
+
+* Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/YieldStudio/filament-panel/pull/1
+* Bump stefanzweifel/git-auto-commit-action from 4 to 7 by @dependabot[bot] in https://github.com/YieldStudio/filament-panel/pull/2
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/YieldStudio/filament-panel/pull/3
+
+### New Contributors
+
+* @dependabot[bot] made their first contribution in https://github.com/YieldStudio/filament-panel/pull/1
+
+**Full Changelog**: https://github.com/YieldStudio/filament-panel/compare/0.0.1...0.0.2
+
 ## Initial Release - 2025-12-03
 
 ### 🎉 First Release
@@ -79,6 +93,7 @@ This is the first stable release of the Filament Panel package - a comprehensive
 ```bash
 composer require yieldstudio/filament-panel
 
+
 ```
 ### 📖 Usage Example
 
@@ -107,5 +122,6 @@ $panel
         DevelopperLogin::make()
             ->users(['admin@example.com', 'dev@example.com'])
     );
+
 
 ```
