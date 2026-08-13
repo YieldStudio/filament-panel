@@ -3,6 +3,8 @@
 #   cooldown  : delai avant qu'une version fraichement publiee soit proposee.
 #               Protection directe contre une version empoisonnee restee en ligne
 #               quelques heures, comme lors de la campagne ChainDrop du 04/08.
+#               Les paliers semver ne sont acceptes que pour npm et composer ;
+#               docker et github-actions n'acceptent que default-days.
 #   groups    : effondre N pull requests en une seule, et rend la PR stable dans
 #               le temps : elle se met a jour au lieu d'etre remplacee.
 #   monthly   : les correctifs de securite restent immediats, ils ne passent pas
@@ -19,9 +21,6 @@ updates:
   open-pull-requests-limit: 1
   cooldown:
     default-days: 7
-    semver-major-days: 30
-    semver-minor-days: 7
-    semver-patch-days: 3
   groups:
     github_actions:
       patterns:
